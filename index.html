@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heal & Fit</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/index.html"><img src="OIP (1).jpeg" alt="Heal & Fit"></a>
+      <nav>
+        
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#calculate">Calculate BMI</a></li>
+          <li><a href="#diet">Diet Plans</a></li>
+          <li><a href="/workout.html">Workouts</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home">
+      <h1>What is BMI?</h1>
+      <p>BMI is a measurement that uses an individual's weight and height to estimate body fat. It's calculated by dividing a person's weight in kilograms by the square of their height in meters (BMI = weight / height^2).
+        <br>BMI is commonly used as an initial screening tool to categorize individuals into weight categories: underweight, normal weight, overweight, or obese.</p>
+         <h2>BMI Categories:</h2>
+         <p>Underweight: BMI less than 18.5<br>
+            Normal Weight: BMI between 18.5 and 24.9<br>    
+            Overweight: BMI between 25 and 29.9<br>
+            Obese: BMI of 30 or greater</p>
+            <h3>Maintaining a Healthy BMI and Fitness Level:</h3>
+            <p>Balanced Diet: Consuming a balanced diet with adequate nutrients is crucial for maintaining a healthy body. <br>
+                Regular Exercise: Engaging in physical activities helps in managing weight, improving cardiovascular health, and boosting overall fitness.<br>
+                Consulting Healthcare Professionals: Seeking guidance from healthcare providers, nutritionists, or fitness experts can assist in creating personalized plans for weight management.</p>
+            
+    </section>
+
+    <section id="calculate">
+      <h2>BMI Calculator</h2>
+      <div class="input-container">
+        <label for="height">Enter Height (in cm):</label>
+        <input type="number" id="height" placeholder="Height in cm">
+      </div>
+      <div class="input-container">
+        <label for="weight">Enter Weight (in kg):</label>
+        <input type="number" id="weight" placeholder="Weight in kg">
+      </div>
+      <button onclick="calculateBMI()">Calculate BMI</button>
+      <p>Your BMI is: <span id="result"></span></p>
+      <p id="category"></p>
+    </section>
+
+    <section id="diet">
+      <h2>Diet Plans :</h2>
+      <h3>Diet Plan for Overweight Individuals:</h3>
+      <p><b>Balanced Diet:</b> Consume a well-balanced diet that includes plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats.<br>
+       <b> Portion Control:</b> Be mindful of portion sizes to manage calorie intake.<br>
+       <b>Reduced Sugar and Processed Foods:</b> Limit consumption of sugary beverages, processed snacks, and high-fat foods.<br>
+        <b>Increase Fiber Intake: </b> Fiber-rich foods like fruits, vegetables, and whole grains help in feeling full and aid in digestion.<br>
+        <b>Healthy Snacking:</b> Opt for healthier snack options like nuts, fruits, or yogurt instead of high-calorie snacks.<br>
+        </p>
+        <i<h3>Diet Plan for Underweight Individuals:</h3>
+        <p>
+          <b>Calorie-Dense Foods:</b> Include calorie-dense foods to increase overall calorie intake.<br>
+<b>Frequent Meals:</b> Eat multiple small meals throughout the day to increase calorie consumption.<br>
+<b>Protein-Rich Foods:</b> Consume protein-rich foods to help in muscle building and repair.<br>
+<b>Healthy Fats:</b> Incorporate healthy fats like avocados, nuts, seeds, and olive oil into meals.<br>
+<b>Nutrient-Rich Snacks:</b> Opt for nutrient-dense snacks like dried fruits, trail mix, or smoothies.
+        </p>
+      <div id="dietPlan"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Health & Fitness</p>
+    </div>
+  </footer>
+</body>
+</html>
